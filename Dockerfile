@@ -1,6 +1,4 @@
-FROM debian:bookworm
-
-RUN echo "deb http://deb.debian.org/debian bookworm-backports main contrib non-free" > /etc/apt/sources.list.d/bookworm-backports.list
+FROM debian:sid
 
 RUN apt-get update \
   && apt-get install -y kicad \
