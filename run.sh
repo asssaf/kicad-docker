@@ -10,6 +10,7 @@ docker run \
         --rm \
         --name kicad \
         --network=host \
+        --device=/dev/dri/card0 \
         -u $UID \
         -e DISPLAY=$DISPLAY \
         -v $HOME/.Xauthority:/home/user/.Xauthority \
